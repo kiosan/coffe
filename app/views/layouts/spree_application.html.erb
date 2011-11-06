@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head data-hook="inside_head">
+    <%= render 'shared/head' %>
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+    <div id="wrapper">
+      <div id="container">
+        <div id="header" >
+          <div id="logo" >
+            <%= logo %>
+          </div>
+          <div id="header-bar">
+            <%= render 'shared/nav' %>
+          </div>
+          <%= render 'shared/account' %>
+        </div>
+
+        <div id="matter" class="matter">
+
+          <%=render "products/category_header"%>
+
+          <div class="grid" >
+            <% if content_for?(:sidebar) %>
+              <div id="sidebar">
+                <%= yield :sidebar %>
+              </div>
+            <% end %>
+
+            <div id="content">
+              <%if @taxon%>
+                <div class="catalog-bar">
+                  <%= breadcrumbs(@taxon) %>
+                </div>
+              <%end%>
+              <%= flash_messages %>
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer" data-hook>
+          <div id="footer-left" data-hook>
+            <p><%= t(:powered_by) %> <%= link_to 'Spree', 'http://spreecommerce.com/' %></p>
+          </div>
+          <div id="footer-right" data-hook></div>
+        </div>
+        <%= render 'shared/google_analytics' %>
+      </div>
+    </div>
+  </body>
+</html>

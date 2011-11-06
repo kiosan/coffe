@@ -1,0 +1,41 @@
+<ul id="nav" >
+  <%get_taxonomies.each do |taxonomy| %>
+    <li class="level0">
+      <%=link_to taxonomy.name, seo_url(taxonomy.root)%>
+      <%if taxonomy.root.children.any?%>
+        <div class="menu children2">
+          <div class="liner">
+            <ul class="level0">
+              <%taxonomy.root.children.each do |taxon|%>
+                <li class="level1">
+                  <%=link_to taxon.name, seo_url(taxon)%>
+                  <%if taxon.children.any?%>
+                    <ul class="level1">
+                      <%taxon.children[0..4].each do |ch_taxon|%>
+                        <li class="level2">
+                          <%=link_to ch_taxon.name, seo_url(ch_taxon)%>
+                        </li>
+                      <%end%>
+                    </ul>
+                    <%=link_to t(".view_all"), seo_url(taxon), :class=>"all_level1"%>
+                  <%end%>
+                </li>
+              <%end%>
+            </ul>
+          </div>
+        </div>
+      <%end%>
+    </li>
+  <%end%>
+</ul>
+
+
+<%=render "shared/search"%>
+
+<script type="text/javascript">
+  //<![CDATA[
+  jQuery(function(){
+    //jQuery("#nav").megamenu({ 'justify':'left' });
+  }
+);		//]]>
+</script>

@@ -1,0 +1,22 @@
+
+
+<% content_for :sidebar do %>
+  <div id="catalog-layered-sidebar" class="grid_3">
+    <div data-hook="taxon_sidebar_navigation">
+      <%= render :partial => 'shared/taxonomies' %>
+      <%= render :partial => 'shared/filters' if @taxon.children.empty? %>
+    </div>
+  </div>
+<% end %>
+<div id="catalog-layered-list" class="grid_9">
+  <% if @taxon.children.empty? || !params[:keywords].blank? %>
+    <div data-hook="taxon_products">
+      <%= render :partial => 'shared/products', :locals => {:products => @products, :taxon => @taxon } %>
+    </div>
+  <% else %>
+    <div data-hook="taxon_children">
+      <%= render :partial => 'taxon', :collection => @taxon.children %>
+    </div>
+  <% end %>
+
+</div>

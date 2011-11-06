@@ -1,0 +1,80 @@
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: white;
+}
+#header{
+  position: relative;
+  margin: 0 15px;
+
+}
+#logo {
+  display: block;
+  max-width: 300px;
+  min-height: 105px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+#wrapper{
+  width: 100%;
+  border-top: 5px solid black;
+}
+#account {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#mini-cart {
+  float: left;
+}
+#account ul{
+  list-style: none;
+}
+#account ul.links li {
+  position: relative;
+}
+
+#account ul.links li {
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+}
+#account ul.links > li:last-child a {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#account ul.links > li a {
+  background: #F8F8F8;
+}
+
+#account ul.links li a {
+  display: block;
+  padding: 8px;
+  color: #202020;
+}
+#account ul.links li a:hover {
+  color: #0AD;
+}
+#header a {
+  text-decoration: none;
+}
+#account ul.links li a {
+  display: block;
+  padding: 8px;
+  color: #202020;
+}
+#account a:hover {
+  background: #F0F0F0;
+}
+
+.taxonomy-root{
+  padding-left: 10px;
+}
+.taxons-list{
+  margin: 5px 20px;
+}
+.taxons-list li{
+  margin-top: 10px;
+}

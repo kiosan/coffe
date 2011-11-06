@@ -1,0 +1,1 @@
+Spree::Config.set(:logo => '/assets/logo.png')

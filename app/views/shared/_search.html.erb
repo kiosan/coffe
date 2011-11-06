@@ -1,0 +1,11 @@
+<% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Taxon.roots  %> 
+<%= form_tag products_url, :method => :get, :id=>"search-form" do %>
+  <% select_tag :taxon, 
+        options_for_select([[t(:all_departments), '']] + 
+                              @taxons.map {|t| [t.name, t.id]}, 
+                            @taxon ? @taxon.id : params[:taxon]) %>
+  <label for="search">Пошук</label>
+  <%= text_field_tag :keywords, params[:keywords], :id=>"search", :placeholder=>t(".placeholder") %>
+  <button type="submit"><%=t(".search")%></button>
+<% end %>
+

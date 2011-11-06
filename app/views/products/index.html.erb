@@ -1,0 +1,30 @@
+<% content_for :sidebar do %>
+  <div id="catalog-layered-sidebar" class="grid_3">
+    <div data-hook="homepage_sidebar_navigation">
+      <% if "products" == @current_controller && @taxon %>
+        <%= render 'shared/filters' %>
+      <% else %>
+        <%= render 'shared/taxonomies' %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+
+<% if params[:keywords] %>
+
+  <div data-hook="search_results">
+    <% if @products.empty? %>
+      <%= t(:no_products_found) %>
+    <% else %>
+      <%= render 'shared/products', :products => @products, :taxon => @taxon %>
+    <% end %>
+  </div>
+
+<% else %>
+  <div id="catalog-layered-list" class="grid_9">
+    <div data-hook="homepage_products">
+      <%= render 'shared/products', :products => @products, :taxon => @taxon %>
+    </div>
+  </div>
+<% end %>
