@@ -78,3 +78,20 @@
 .taxons-list li{
   margin-top: 10px;
 }
+
+ul#products li {
+  float: left;
+  text-align: center;
+  width: 200px;
+  height: 180px;
+  padding: 0 10px 20px 10px;
+}
+
+#product-info h1{
+ margin: 0;
+ padding: 0;
+}
+
+.product-br{
+  margin: -10px 15px;
+}

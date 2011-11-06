@@ -1,4 +1,4 @@
-<%if @taxon%>
+<%if @taxon && (params[:controller] != "products")%>
   <div id="category-landing" class="block">
     <h1><%=@taxon.name%></h1>
   </div>

@@ -28,7 +28,7 @@
             <% end %>
 
             <div id="content">
-              <%if @taxon%>
+              <%if @taxon && !@product%>
                 <div class="catalog-bar">
                   <%= breadcrumbs(@taxon) %>
                 </div>
