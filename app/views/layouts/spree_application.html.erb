@@ -28,11 +28,13 @@
             <% end %>
 
             <div id="content">
+
               <%if @taxon && !@product%>
                 <div class="catalog-bar">
                   <%= breadcrumbs(@taxon) %>
                 </div>
               <%end%>
+
               <%= flash_messages %>
               <%= yield %>
             </div>

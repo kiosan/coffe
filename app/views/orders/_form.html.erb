@@ -1,14 +1,22 @@
 <%= render 'shared/error_messages', :target => @order %>
-<table id="cart-detail" data-hook>
+<table id="cart-table" class="flex" cellspacing="0">
   <thead>
     <tr data-hook="cart_items_headers">
-      <th colspan="2"><%= t(:item) %></th>
-      <th><%= t(:price) %></th>
-      <th><%= t(:qty) %></th>
-      <th><%= t(:total) %></th>
-      <th></th>
+      <th class="remove" rowspan="1"><%=t(:remove)%></th>
+      <th class="width-full" rowspan="1"><%= t(:item) %></th>
+      <th class="align-right" colspan="1"><%= t(:price) %></th>
+      <th rowspan="1"><%= t(:qty) %></th>
+      <th class="align-right" colspan="1"><%= t(:total) %></th>
+
     </tr>
   </thead>
+  <tfoot>
+    <tr>
+      <td colspan="50">
+        <button type="submit">Update Quantity</button>
+      </td>
+    </tr>
+  </tfoot>
   <tbody id="line_items" data-hook>
     <%= order_form.fields_for :line_items do |item_form| %>
       <%= render 'line_item', :variant => item_form.object.variant, :line_item => item_form.object, :item_form => item_form %>
