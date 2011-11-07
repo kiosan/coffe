@@ -53,5 +53,6 @@ module Coffe
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    Spree::Config.set(:logo => '/assets/logo.png')
   end
 end
