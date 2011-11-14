@@ -82,9 +82,16 @@
 ul#products li {
   float: left;
   text-align: center;
-  width: 200px;
-  height: 180px;
+  width: 210px;
+  height: 240px;
   padding: 0 10px 20px 10px;
+}
+
+ul#products li .info{
+  display:block;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 #product-info h1{

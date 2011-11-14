@@ -10,6 +10,8 @@ gem 'spree'
 gem 'spree_static_content', :git => 'git://raw.github.com/spree/spree_static_content.git', :branch => 'master'
 # gem "spree_editor", :git => "git://github.com/romul/spree_editor.git"
 gem 'spree_related_products', :git => 'git://raw.github.com/spree/spree_related_products.git', :branch => 'master'
+#gem "spree-ru-ua-l10n", :git => 'git://github.com/rovetz/spree-ru-ua-l10n.git', :branch => 'master'
+gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 gem "thin"
 gem 'eventmachine', '1.0.0.beta3'
 # Gems used only for assets and not required
@@ -21,7 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem "therubyracer"
+#gem "therubyracer"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

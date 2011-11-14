@@ -25,8 +25,8 @@
                 <span class="variant-description">
                   <%= variant_options v %>
                 </span>
-                <% if variant_price_diff v %>
-                  <span class="price diff"><%= variant_price_diff v %></span>
+                <% if v %>
+                  <span class="price diff"><%= product_price(v) %></span>
                 <% end %>
               </label>
             </li>

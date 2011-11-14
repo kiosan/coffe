@@ -1,7 +1,7 @@
 ---
-en:
-  'no': "No"
-  'yes': "Yes"
+uk:
+  'no': "Ні"
+  'yes': "Так"
   5_biggest_spenders: "5 Biggest Spenders"
   a_copy_of_all_mail_will_be_sent_to_the_following_addresses: A copy of all mail be sent to the following addresses
   abbreviation: Abbreviation
@@ -10,22 +10,22 @@ en:
   account_updated: "Account updated!"
   action: Action
   actions:
-    cancel: Cancel
-    create: Create
-    destroy: Destroy
-    list: List
-    listing: Listing
-    new: New
-    update: Update
-  active: "Active"
+    cancel: Відмінити
+    create: Створити
+    destroy: Видалити
+    list: Список
+    listing: Список
+    new: Новий
+    update: Оновити
+  active: "Активний"
   activerecord:
     attributes:
       address:
-        address1: Address
-        address2: "Address (contd.)"
-        city: City
-        country: "Country"
-        firstname: "First Name"
+        address1: Адреса
+        address2: "Адреса (додатково.)"
+        city: Місто
+        country: "Країна"
+        firstname: "Ім'я"
         first_name_begins_with: "First Name Begins With"
         lastname: "Last Name"
         last_name_begins_with: "Last Name Begins With"

@@ -2,3 +2,4 @@
 version: 0.70.0
 address_requires_state: false
 logo: "logo.png"
+default_locale: "uk"
