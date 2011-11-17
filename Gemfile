@@ -6,7 +6,7 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 'spree'
+gem 'spree', :git=>"git://github.com/spree/spree.git"
 gem 'spree_static_content', :git => 'git://raw.github.com/spree/spree_static_content.git', :branch => 'master'
 # gem "spree_editor", :git => "git://github.com/romul/spree_editor.git"
 gem 'spree_related_products', :git => 'git://raw.github.com/spree/spree_related_products.git', :branch => 'master'
