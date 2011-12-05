@@ -1,0 +1,50 @@
+<div class="clear"></div>
+<table border="0" style="border:0" class="social_table">
+  <tr>
+    <td width="200">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-text= ""  data-count="horizontal" datavia="coffeeroom" data-lang="ru" >Tweet</a>
+    </td>    
+    <td width="200">
+      <!-- Put this div tag to the place, where the Like block will be -->
+      <div id="vk_like"></div>
+      <script type="text/javascript">
+        VK.Widgets.Like("vk_like", {type: "10"});
+      </script>
+    </td>
+    <td width="200">
+  <g:plusone size="medium"></g:plusone>
+</td>    
+</tr>
+<tr>
+  <td colspan="3">
+    <div id="fb-root"></div>
+
+    <script type="text/javascript">
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=216049398414319";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+  </td>
+</tr>
+</table>
+
+<%-content_for :head do %>
+  <script type="text/javascript"  src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript"  src="http://platform.twitter.com/widgets.js"></script>
+<%end%>
+
+<style type="text/css">
+  .social_table{
+    border: 0px!important;
+    width: 98%;
+  }
+  .social_table td{
+    border: 0px!important;
+  }
+  #fb-root{float:right;}
+</style>

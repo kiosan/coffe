@@ -25,4 +25,23 @@ module SpreeHelper
     crumb_list = content_tag(:ul, raw(crumbs.flatten.map{|li| li.mb_chars}.join), :class=>"breadcrumbs")
     content_tag(:div, crumb_list, :id => 'breadcrumbs')
   end
+    
+  # returns the price of the product to show for display purposes
+  def product_price(product_or_variant, options={})
+    amount = product_or_variant.price
+    options.reverse_merge! :format_as_currency => true  
+    if product_or_variant.kind_of? Variant
+      currency = product_or_variant.product.currency
+    else
+      currency = product_or_variant.currency
+    end
+    p "-------------------"
+    p options
+    options.delete(:format_as_currency) ? format_price(amount, {:currency=>currency}) : amount
+  end
+  
+  def format_price(price, options={})
+    formatted_price = number_to_currency price, :locale => options[:currency] == "EUR" ? :fr : I18n.locale
+    formatted_price
+  end
 end

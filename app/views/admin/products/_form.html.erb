@@ -37,8 +37,14 @@
         <%= f.label :cost_price, t(:cost_price) %><br />
         <%= f.text_field :cost_price, :value => number_with_precision(@product.cost_price, :precision => 2) %>
       <%= f.error_message_on :cost_price %>
+        
     <% end %>
-
+     <%= f.field_container :currency do %>
+        <%= f.label :price, t(:currency) %> <span class="required">*</span><br />
+        <%= f.text_field :currency, :value => @product.currency  %>
+        <%= f.error_message_on :currency%>
+      <% end %>
+        
     <p>
       <%= f.label :available_on, t(:available_on) %><br />
       <%= f.error_message_on :available_on %>

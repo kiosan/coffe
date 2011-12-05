@@ -37,26 +37,7 @@
         <br/>
         <%= render 'cart_form' %>
       </div>
-<div class="grid_2 omega">
 
-        <ul class="social-share">
-          <li class="twitter"><iframe src="http://platform.twitter.com/widgets/tweet_button.html#_=1320593980478&amp;count=horizontal&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fcoffeeroom.com.ua%2Findex.php%2Fdefault%2Fmelena-kavka&amp;text=%D0%9C%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0%20%D0%BA%D0%B0%D0%B2%D0%BA%D0%B0%20%7C%20%D0%9A%D0%B0%D0%B2%D0%BE%D0%B2%D0%B0%20%D0%BA%D1%80%D0%B0%D0%BC%D0%BD%D0%B8%D1%87%D0%BA%D0%B0&amp;url=http%3A%2F%2Fcoffeeroom.com.ua%2Findex.php%2Fdefault%2Fmelena-kavka" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" style="width: 110px; height: 20px; " title="Twitter For Websites: Tweet Button"></iframe><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
-          <li class="googleplus">
-            <!-- Place this tag where you want the +1 button to render -->
-            <div id="___plusone_0" style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial; "><iframe allowtransparency="true" frameborder="0" hspace="0" id="I1_1320593980881" marginheight="0" marginwidth="0" name="I1_1320593980881" scrolling="no" src="https://plusone.google.com/u/0/_/+1/fastbutton?url=http%3A%2F%2Fcoffeeroom.com.ua%2Findex.php%2Fdefault%2Fmelena-kavka&amp;size=medium&amp;count=true&amp;annotation=&amp;hl=en-US&amp;jsh=r%3Bgc%2F25095437-ce843676#id=I1_1320593980881&amp;parent=http%3A%2F%2Fcoffeeroom.com.ua&amp;rpctoken=662913653&amp;_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe" style="width: 90px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; height: 20px; position: static; left: 0px; top: 0px; visibility: visible; " tabindex="-1" vspace="0" width="100%" title="+1"></iframe></div>
-
-            <!-- Place this render call where appropriate -->
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-          </li>
-          <li class="facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" send="false" layout="button_count" width="130" show_faces="false" font="" class=" fb_edge_widget_with_comment fb_iframe_widget"><span><iframe id="f2d5ea3fc4" name="f10fc6050" scrolling="no" style="border-width: initial; border-color: initial; overflow-x: hidden; overflow-y: hidden; height: 20px; width: 130px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; " title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?channel_url=http%3A%2F%2Fstatic.ak.fbcdn.net%2Fconnect%2Fxd_proxy.php%3Fversion%3D3%23cb%3Df20c24dd38%26origin%3Dhttp%253A%252F%252Fcoffeeroom.com.ua%252Ff18ea67aa8%26relation%3Dparent.parent%26transport%3Dpostmessage&amp;extended_social_context=false&amp;href=http%3A%2F%2Fcoffeeroom.com.ua%2Findex.php%2Fdefault%2Fmelena-kavka&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=130"></iframe></span></fb:like></li>
-        </ul>
-      </div>
       <div class="clear"></div>
       <p class="short-description">
         <%= product_description(@product) rescue t(:product_has_no_description) %>
@@ -64,10 +45,14 @@
         <%= render 'properties' %>
       </div>
       </p>
+      
+     
 
       
     </div>
+    
 
   </div>
+  <%=render :partial=>"socials"%>
   <%= render 'taxons' %>
 </div>

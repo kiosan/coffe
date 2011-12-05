@@ -824,7 +824,7 @@ h4 {
   padding-right: 10px;
 }
 
-#mini-cart-list li .product-details .btn-remove {
+#mini-cart-list li .product-details .delete{
   position: absolute;
   right: 0;
   top: 0;
@@ -1319,7 +1319,7 @@ table.flex a.product-image img {
   height: 50px;
 }
 
-table.flex .btn-remove {
+table.flex .delete {
   margin-top: 2px;
 }
 
@@ -1367,7 +1367,7 @@ table.simple td {
   vertical-align: top;
 }
 
-a.btn-remove {
+a.delete {
   display: block;
   width: 15px;
   height: 15px;
@@ -1375,11 +1375,11 @@ a.btn-remove {
   text-indent: -9999px;
 }
 
-a.btn-remove:hover {
+a.delete:hover {
   background-position: 0 -15px;
 }
 
-a.btn-remove:active {
+a.delete:active {
   background-position: 0 -30px;
 }
 
@@ -2506,7 +2506,7 @@ ul.dashboard-links li a:hover {
   width: 225px;
 }
 
-#wishlist-table tbody .btn-remove {
+#wishlist-table tbody .delete {
   margin-top: 22px;
 }
 
@@ -2538,7 +2538,7 @@ ul.dashboard-links li a:hover {
   float: left;
 }
 
-#cart-table a.btn-remove {
+#cart-table a.delete {
   margin-top: 22px;
 }
 

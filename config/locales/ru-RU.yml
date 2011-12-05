@@ -684,6 +684,8 @@ uk:
   preview: "Предпросмотр"
   previous: "пред."
   price: "Ціна"
+  currency: "Валюта напр. EUR"
+  recalc_cart: "Перерахувати кількість"
   price_bucket: "Комбинированная цена"
   price_with_vat_included: "%{price} (вкл. НДС)"
   problem_authorizing_card: "Проблема при авторизации Вашей кредитной карты"

@@ -111,3 +111,5 @@ ul#products li .info{
 thead th {
   background: none;
 }
+
+.price{white-space: nowrap;}
