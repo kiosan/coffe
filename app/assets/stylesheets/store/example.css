@@ -130,3 +130,242 @@ blockquote {
 #paragraph-content, #quote-content {
   text-align: justify;
 }
+
+
+
+
+
+
+
+
+ol.progress-steps {
+	list-style:none;
+	margin:0;
+	padding:0;
+	line-height:1em;
+	font-size:12px;
+}
+
+ol.progress-steps li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:block;
+	float:left;
+	color:#999999;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-image:url(/assets/step-progress/incomplete-incomplete.gif);
+}
+
+ol.progress-steps li span {
+	padding:6px 14px 7px 24px;
+	display:block;
+	float:left;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+ol.progress-steps li a {
+	text-decoration:none;
+	color:#333333;
+}
+
+ol.progress-steps li.current-first span {
+	padding-left:14px;
+}
+
+ol.progress-steps li.completed-first span {
+	padding-left:14px;
+}
+
+ol.progress-steps li.current-first {
+	background-image:url(/assets/step-progress/current-first.gif);
+}
+
+ol.progress-steps li.completed-first {
+	background-image:url(/assets/step-progress/completed-first.gif) !important;
+}
+
+ol.progress-steps li.current {
+	color:#ffffff;
+}
+
+ol.progress-steps li.current-first {
+	color:#ffffff;
+}
+
+ol.progress-steps li.current-last {
+	color:#ffffff;
+}
+
+ol.progress-steps li.completed {
+	background-image:url(/assets/step-progress/completed-completed.gif);
+}
+
+ol.progress-steps li.current {
+	background-image:url(/assets/step-progress/completed-current.gif);
+}
+
+ol.progress-steps li.current-last {
+	background-image:url(/assets/step-progress/completed-current.gif);
+}
+
+ol.progress-steps li.next {
+	background-image:url(/assets/step-progress/current-incomplete.gif);
+}
+
+ol.progress-steps li.next-last {
+	background-image:url(/assets/step-progress/current-incomplete.gif);
+}
+
+ol.progress-steps li.last span {
+	background-image:url(/assets/step-progress/incomplete-right.gif);
+}
+
+ol.progress-steps li.next-last span {
+	background-image:url(/assets/step-progress/incomplete-right.gif);
+}
+
+ol.progress-steps li.current-last span {
+	background-image:url(/assets/step-progress/current-right.gif);
+}
+
+div#checkout {
+	position:relative;
+}
+
+div#checkout .progress-steps {
+	position:absolute;
+	top:0.5em;
+	right:0;
+}
+
+div#checkout form {
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+div#checkout #checkout_form_address {
+	background-image:url("../images/steps/2.png");
+}
+
+div#checkout #checkout_form_delivery {
+	background-image:url("../images/steps/3.png");
+}
+
+div#checkout #checkout_form_address #billing label {
+	float:left;
+	text-align:right;
+}
+
+div#checkout #checkout_form_address #shipping label {
+	float:left;
+	text-align:right;
+}
+
+div#checkout #checkout_form_address #billing input {
+	width:304px;
+}
+
+div#checkout #checkout_form_address #shipping input {
+	width:304px;
+}
+
+div#checkout #checkout_form_address #billing select {
+	width:304px;
+}
+
+div#checkout #checkout_form_address #shipping select {
+	width:304px;
+}
+
+div#checkout #checkout_form_address #billing p.checkbox {
+	padding-left:200px;
+}
+
+div#checkout #checkout_form_address #shipping p.checkbox {
+	padding-left:0px;
+}
+
+div#checkout #checkout_form_address .form-buttons {
+	padding-left:0px;
+}
+
+div#checkout #checkout_form_address #billing p.checkbox label {
+	width:auto !important;
+	float:none !important;
+}
+
+div#checkout #checkout_form_address #shipping p.checkbox label {
+	width:auto !important;
+	float:none !important;
+}
+
+div#checkout #checkout_form_address #billing p.checkbox input {
+	width:auto !important;
+}
+
+div#checkout #checkout_form_address #shipping p.checkbox input {
+	width:auto !important;
+}
+
+div#checkout #checkout_form_payment {
+	background-image:url("../images/steps/5.png");
+}
+
+div#checkout #checkout_form_payment select {
+	width:75px;
+}
+
+div#checkout #checkout_form_payment #payment {
+	display:inline;
+	float:left;
+	width:310px;
+	margin-right:10px;
+}
+
+div#checkout #checkout_form_payment #order_details {
+	display:inline;
+	float:left;
+	width:470px;
+	margin-right:10px;
+}
+
+div#checkout #payment-methods {
+	list-style:none;
+	display:block;
+	padding:0;
+	margin:0;
+	width:720px;
+}
+
+div#checkout #payment-methods li {
+	display:block;
+	display:inline;
+	float:left;
+	width:190px;
+	margin-right:10px;
+}
+
+div#checkout #payment-methods li.last {
+	display:inline;
+	float:left;
+	width:190px;
+}
+
+div#checkout #checkout-summary {
+	background-color:#c3c9df;
+	float:right;
+	margin-top:10px;
+	padding:20px;
+	width:180px;
+}
+
+div#checkout #checkout-summary {
+	background-color:#c3c9df;
+	float:right;
+	margin-top:10px;
+	padding:20px;
+	width:180px;
+}
