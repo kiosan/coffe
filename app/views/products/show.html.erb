@@ -5,23 +5,16 @@
 </div>
 
 <div id="product-header" class="grid">
-  <div id="product-media" class="grid_5">
-
-
-
-    <%= render 'image' %>
-
-    <div id="thumbnails" data-hook>
-      <%= render 'thumbnails', :product => @product %>
+  <div id="product-images" class="grid_5">
+    <div id="main-image">
+      <%= render 'image' %>
     </div>
+    <div class="clear"></div>
+      <div id="thumbnails" data-hook>
+        <%= render 'thumbnails', :product => @product %>
+      </div>
 
-    <!--ul class="more-views">
-      <li>
-        <a class="product-image small zoom cboxElement" rel="zoom-group" href="http://coffeeroom.com.ua/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/m/rm.jpg" title="">
-          <img src="http://coffeeroom.com.ua/media/catalog/product/cache/1/thumbnail/52x52/9df78eab33525d08d6e5fb8d27136e95/r/m/rm.jpg" alt="">
-        </a>
-      </li>
-    </ul-->
+    
   </div>
 
   <div id="product-info" class="grid_7">

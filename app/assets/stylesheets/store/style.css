@@ -113,3 +113,37 @@ thead th {
 }
 
 .price{white-space: nowrap;}
+#product-info{float:left;width: 50%;}
+#product-images{width:40%!important;}
+ul.thumbnails {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+ul.thumbnails li {
+  float:left;
+  margin-right:5px;
+  padding:3px;
+  border:1px solid #ffffff;
+  min-height:50px;
+  width:50px;
+  position:relative;
+}
+
+ul.thumbnails li img {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+ul.thumbnails li:hover {
+  border-color:#cccccc;
+}
+
+ul.thumbnails li.selected {
+  border-color:#999999;
+}
