@@ -1,4 +1,4 @@
-Image.class_eval do
+Spree::Image.class_eval do
   attachment_definitions[:attachment][:styles] = {
     :mini => '52x52', # thumbs under image
     :small => '200x200', # images on category view

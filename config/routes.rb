@@ -1,4 +1,8 @@
 Coffe::Application.routes.draw do
+  # Mount Spree's routes
+  mount Spree::Core::Engine, :at => '/'
+  #mount Spree::Auth::Engine, :at => '/' 
+  #mount Spree::Core::Engine, :at => '/' 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -21,17 +21,17 @@ uk:
   activerecord: 
     attributes: 
       address: 
-        address1: "Адрес"
-        address2: "Адрес (2я строка)"
-        city: "Город"
-        country: "Страна"
+        address1: "Адреса"
+        address2: "Адреса (додатково)"
+        city: "Місто"
+        country: "Країна"
         first_name_begins_with: "Имя начинается с"
-        firstname: "Имя"
+        firstname: "Ім'я"
         last_name_begins_with: "Фамилия начинается с"
-        lastname: "Фамилия"
+        lastname: "Прізвище"
         phone: "Телефон"
-        state: "Регион/Область"
-        zipcode: "Индекс"
+        state: "Область"
+        zipcode: "Індекс"
       country: 
         iso: "ISO"
         iso3: "ISO3"
@@ -48,7 +48,7 @@ uk:
         state: "Состояние"
       line_item: 
         price: "Ціна"
-        quantity: "Количество"
+        quantity: "Кількість"
       order: 
         bill_address: 
           address1: "Платёжный адрес. Адрес"
@@ -461,7 +461,7 @@ uk:
   height: "Высота"
   hello_user: "Добро пожаловать"
   history: "История"
-  home: "Домой"
+  home: "Головна"
   icon: "Иконка"
   icons_by: "Иконки предоставлены"
   image: "Изображение"
@@ -482,7 +482,7 @@ uk:
   inventory_settings: "Настройки товарной номенклатуры"
   is_not_available_to_shipment_address: "не может быть применён к указанному адресу доставки"
   issue_number: "Номер проблемы ??"
-  item: "Наименование"
+  item: "Назва"
   item_description: "Описание товара"
   item_total: "Итого (товары)"
   item_total_rule: 

@@ -11,14 +11,35 @@ end
 
 module Coffe
   class Application < Rails::Application
-    config.middleware.use "SeoAssist"
-    config.middleware.use "RedirectLegacyProductUrl"
-
+    
     config.to_prepare do
+      # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
+
+      # Load application's view overrides
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
     end
+
+  
+    config.to_prepare do
+      # Load application's model / class decorators
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+
+      # Load application's view overrides
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+    end
+
+    
+
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -42,7 +63,7 @@ module Coffe
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :uk
 
-    config.assets.precompile += ['jquery.jstree/themes/apple/*']
+    #config.assets.precompile += ['jquery.jstree/themes/apple/*']
     
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
