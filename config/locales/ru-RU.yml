@@ -246,7 +246,7 @@ en:
   all: "все"
   all_departments: "Всі розділи"
   allow_backorders: "Дозволи"
-  allow_ssl_to_be_used_when_in_developement_and_test_modes:"Використовувати SSL в development і test режимах"
+  allow_ssl_to_be_used_when_in_developement_and_test_modes: "Використовувати SSL в development і test режимах"
   allow_ssl_to_be_used_when_in_production_mode: "Використати SSL в production"
   allowed_ssl_in_production_mode: "SSL %{not} буде використаний в режимі production"
   already_registered: "Вже зареєстровані"
