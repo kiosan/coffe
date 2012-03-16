@@ -1,5 +1,5 @@
 ---
-UA-uk: 
+uk: 
   'no': "Ні"
   'yes': "Так"
   5_biggest_spenders: "5 найбільших покупців"
@@ -1086,3 +1086,10 @@ UA-uk:
   zone_based: "Складається з інших зон"
   zone_setting_description: "Налаштування торгових зон на основі країн, областей і інших торгових зон."
   zones: "Торгові зони"
+  views:
+    pagination:
+      next: наступна →
+      previous: ← попередня
+      first: перша 
+      last: остання 
+      truncate: "..."
