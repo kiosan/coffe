@@ -9,7 +9,6 @@
  *= require admin/spree_api
  *= require admin/spree_promo
  *= require formtastic
-
  *= require_self
  *= require_tree .
 */
