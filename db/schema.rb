@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120315064358) do
+ActiveRecord::Schema.define(:version => 20120409193540) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -498,7 +498,7 @@ ActiveRecord::Schema.define(:version => 20120315064358) do
     t.boolean  "match_one"
   end
 
-  create_table "spree_state_events", :force => true do |t|
+  create_table "spree_state_changes", :force => true do |t|
     t.integer  "stateful_id"
     t.integer  "user_id"
     t.string   "name"
@@ -521,6 +521,7 @@ ActiveRecord::Schema.define(:version => 20120315064358) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "is_default",  :default => false
+    t.datetime "deleted_at"
   end
 
   create_table "spree_tax_rates", :force => true do |t|
@@ -587,8 +588,8 @@ ActiveRecord::Schema.define(:version => 20120315064358) do
     t.string   "persistence_token"
     t.string   "reset_password_token"
     t.string   "perishable_token"
-    t.integer  "sign_in_count",                      :default => 0, :null => false
-    t.integer  "failed_attempts",                    :default => 0, :null => false
+    t.integer  "sign_in_count",                        :default => 0, :null => false
+    t.integer  "failed_attempts",                      :default => 0, :null => false
     t.datetime "last_request_at"
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
@@ -601,7 +602,8 @@ ActiveRecord::Schema.define(:version => 20120315064358) do
     t.string   "unlock_token"
     t.datetime "locked_at"
     t.datetime "remember_created_at"
-    t.string   "api_key",              :limit => 40
+    t.datetime "reset_password_sent_at"
+    t.string   "api_key",                :limit => 40
   end
 
   add_index "spree_users", ["persistence_token"], :name => "index_users_on_persistence_token"

@@ -9,7 +9,7 @@ gem 'mysql2', '0.3.10'
 
 gem 'spree', :git=>"git://github.com/spree/spree.git", :branch => 'master'
 
-gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content.git', :branch => 'master'
+gem 'spree_static_content', :git =>"git@github.com:kiosan/spree_static_content.git"
 gem "formtastic"
 # gem "spree_editor", :git => "git://github.com/romul/spree_editor.git"
 gem 'spree_editor', :git => 'git://raw.github.com/spree/spree_editor.git'

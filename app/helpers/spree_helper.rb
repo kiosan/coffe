@@ -1,3 +1,4 @@
+
 module SpreeHelper
   def link_to_cart(text = t('cart'))
     return "" if current_page?(cart_path)
@@ -38,6 +39,12 @@ module SpreeHelper
     p "-------------------"
     p options
     options.delete(:format_as_currency) ? format_price(amount, {:currency=>currency}) : amount
+  end
+
+  def variant_price_diff(v)
+
+    number_to_currency variant.price
+    
   end
   
   def format_price(price, options={})
