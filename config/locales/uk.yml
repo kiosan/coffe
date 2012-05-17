@@ -1,5 +1,5 @@
 ---
-uk: 
+uk:
   'no': "Ні"
   'yes': "Так"
   5_biggest_spenders: "5 найбільших покупців"
@@ -9,7 +9,7 @@ uk:
   account: "Обліковий запис"
   account_updated: "Обліковий запис оновлено!"
   action: "Дія"
-  actions: 
+  actions:
     cancel: "Скасувати"
     create: "Створити"
     destroy: "Видалити"
@@ -18,9 +18,9 @@ uk:
     new: "Новий"
     update: "Змінити"
   active: "Активний"
-  activerecord: 
-    attributes: 
-      address: 
+  activerecord:
+    attributes:
+      address:
         address1: "Адреса"
         address2: "Адреса (додатково)"
         city: "Місто"
@@ -32,25 +32,25 @@ uk:
         phone: "Телефон"
         state: "Область"
         zipcode: "Індекс"
-      country: 
+      country:
         iso: "ISO"
         iso3: "ISO3"
         iso_name: "Назва ISO"
         name: "Назва"
         numcode: "Код ISO"
-      creditcard: 
+      creditcard:
         cc_type: "Тип"
         month: "Місяць"
         number: "Номер"
         verification_value: "Код верифікації"
         year: "Рік"
-      inventory_unit: 
+      inventory_unit:
         state: "Стан"
-      line_item: 
+      line_item:
         price: "Ціна"
         quantity: "Кількість"
-      order: 
-        bill_address: 
+      order:
+        bill_address:
           address1: "Платіжна адреса. Адреса"
           city: "Платіжна адреса. Місто"
           firstname: "Платіжна адреса. Ім’я"
@@ -58,7 +58,7 @@ uk:
           phone: "Платіжна адреса. Телефон"
           state: "Платіжна адреса. Регіон/Область"
           zipcode: "Платіжна адреса. Індекс"
-        ship_address: 
+        ship_address:
           address1: "Адреса  доставки. Адреса"
           city: "Адреса доставки. Місто"
           firstname: "Адреса доставки. Ім’я"
@@ -81,7 +81,7 @@ uk:
         presentation: "Відображати як"
       payment_method:
         name: "Найменування"
-      product: 
+      product:
         available_on: "Доступно з"
         cost_price: "Собівартість"
         description: "Опис"
@@ -90,50 +90,50 @@ uk:
         on_hand: "В наявності"
         shipping_category: "Категорія доставки"
         tax_category: "Податкова категорія"
-      product_group: 
+      product_group:
         name: "Назва"
         product_count: "Кількість товарів"
         product_scopes: "Фільтри"
         products: "Товари"
         url: "URL"
-      product_scope: 
+      product_scope:
         arguments: "Аргументи"
         description: "Опис"
-      promotion: 
+      promotion:
         code: "Код купона"
         description: "Опис"
         expires_at: "Дата завершення промо-акції"
         name: "Назва"
         starts_at: "Дата початку промо-акції"
         usage_limit: "Максималька кі-сть застосувань"
-      property: 
+      property:
         name: "Найменування"
         presentation: "Відображати як"
-      prototype: 
+      prototype:
         name: "Найменування"
-      return_authorization: 
+      return_authorization:
         amount: "Сума"
-      role: 
+      role:
         name: "Найменування"
-      state: 
+      state:
         abbr: "Абревіатура"
         name: "Назва"
-      tax_category: 
+      tax_category:
         description: "Опис"
         name: "Найменування"
-      tax_rate: 
+      tax_rate:
         amount: "Податкова ставка"
-      taxon: 
+      taxon:
         name: "Найменування"
         permalink: "Постійне посилання"
         position: "Позиція"
-      taxonomy: 
+      taxonomy:
         name: "Найменування"
-      user: 
+      user:
         email: "Email"
         password: "Пароль"
         password_confirmation: "Підтвердження пароля"
-      variant: 
+      variant:
         cost_price: "Собівартість"
         depth: "Глибина"
         height: "Висота"
@@ -141,86 +141,86 @@ uk:
         sku: "Артикул"
         weight: "Вага"
         width: "Ширина"
-      zone: 
+      zone:
         description: "Опис"
         name: "Найменування"
-    models: 
-      address: 
+    models:
+      address:
         one: "Адреса"
         other: "Адрес"
-      cheque_payment: 
+      cheque_payment:
         one: "Оплата чеком"
         other: "Оплати чеками"
-      country: 
+      country:
         one: "Країна"
         other: "Країна"
-      creditcard: 
+      creditcard:
         one: "Кредитна картка"
         other: "Кредитні картки"
-      creditcard_payment: 
+      creditcard_payment:
         one: "Платіж кредитною карткою"
         other: "Платежі кредитною карткою"
-      creditcard_txn: 
+      creditcard_txn:
         one: "Транзакція по кредитній картці"
         other: "Транзакції по кредитних картках"
-      inventory_unit: 
+      inventory_unit:
         one: "Одиниця обліку"
         other: "Одиниця обліку"
-      line_item: 
+      line_item:
         one: "Позиція"
         other: "Позиції"
-      order: 
+      order:
         one: "Замовлення"
         other: "Замовлення"
-      payment: 
+      payment:
         one: "Платіж"
         other: "Платежі"
-      product: 
+      product:
         one: "Товар"
         other: "Товари"
-      product_group: 
+      product_group:
         one: "Група товарів"
         other: "Групи товарів"
-      property: 
+      property:
         one: "Властивість"
         other: "Властивості"
-      prototype: 
+      prototype:
         one: "Прототип"
         other: "Прототипи"
-      return_authorization: 
+      return_authorization:
         one: "Дозвіл на повернення"
         other: "Дозволи на повернення"
-      role: 
+      role:
         one: "Роль"
         other: "Ролі"
-      shipment: 
+      shipment:
         one: "Відправлення"
         other: "Відправки"
-      shipping_category: 
+      shipping_category:
         one: "Категорія доставки"
         other: "Категорії доставки"
-      state: 
+      state:
         one: "Регіон/Область"
         other: "Регіони"
-      tax_category: 
+      tax_category:
         one: "Податкова категорія"
         other: "Податкові категорії"
-      tax_rate: 
+      tax_rate:
         one: "Податкова ставка"
         other: "Податкові ставки"
-      taxon: 
+      taxon:
         one: "Таксон"
         other: "Таксони"
-      taxonomy: 
+      taxonomy:
         one: "Таксономія"
         other: "Таксономії"
-      user: 
+      user:
         one: "Користувач"
         other: "Користувачі"
-      variant: 
+      variant:
         one: "Варіант"
         other: "Варіанти"
-      zone: 
+      zone:
         one: "Зона"
         other: "Зони"
   add: "Додати"
@@ -254,10 +254,10 @@ uk:
   alternative_phone: "Додатковий телефон"
   amount: "Сума"
   analytics_trackers: "Трекери веб-аналітики"
-  api: 
+  api:
     access: "API доступ"
     clear_key: "Очистити ключ API"
-    errors: 
+    errors:
       invalid_event: "Невірне ім'я події, допустимі імена: %{events}"
       invalid_event_for_object: "Вірне ім'я події, але не допускається для даного об'єкта, допустимі імена: %{events}"
       missing_event: "Не вказано ім’я події"
@@ -408,11 +408,11 @@ uk:
   enter_password_to_confirm: "(необхідно вказати Ваш поточний пароль для підтвердження змін)"
   environment: "Середовище"
   error: "помилка"
-  errors: 
-    messages: 
+  errors:
+    messages:
       could_not_create_taxon: "Could not create taxon"
       no_shipping_methods_available: "Для зазначеного місця розташування відсутні способи доставки, будь ласка, змініть адресу і спробуйте знову."
-  errors_prohibited_this_record_from_being_saved: 
+  errors_prohibited_this_record_from_being_saved:
     one: "1 помилка не дозволяє зберегти запис в базі"
     other: "%{count}помилок не дозволяють зберегти запис в базі"
   event: "Подія"
@@ -485,8 +485,8 @@ uk:
   item: "Назва"
   item_description: "Опис товару"
   item_total: "Всього (товари)"
-  item_total_rule: 
-    operators: 
+  item_total_rule:
+    operators:
       gt: "більше"
       gte: "більше або дорівнює"
   items: "Найменування"
@@ -513,7 +513,7 @@ uk:
   logged_in_as: "Користувач"
   logged_in_succesfully: "Ви увійшли в систему"
   logged_out: "Ви вийшли з системи."
-  login: "Логін"
+  login: "Вхід"
   login_as_existing: "Увійти як покупець"
   login_failed: "Вхід не виконаний."
   login_name: "Логін"
@@ -535,7 +535,7 @@ uk:
   minimal_amount: "Мінімальна сума"
   missing_required_information: "Некоректна необхідна інформація"
   month: "Місяць"
-  my_account: "Мій обліковий запис"
+  my_account: "Моя сторінка"
   my_orders: "Мої замовлення"
   name: "Найменування"
   name_or_sku: "Найменування або артикул"
@@ -584,7 +584,7 @@ uk:
   not: "не"
   not_shown: "не показано"
   note: "Примітка"
-  notice_messages: 
+  notice_messages:
     option_type_removed: "Товарна опція успішно прибрана."
     product_cloned: "Копія товару створена"
     product_deleted: "Товар успішно видалений"
@@ -607,18 +607,18 @@ uk:
   order_date: "Дата замовлення"
   order_details: "Деталі замовлення"
   order_email_resent: "Лист з описом замовлення вислано повторно"
-  order_mailer: 
-    cancel_email: 
+  order_mailer:
+    cancel_email:
       subject: "Анулювання замовлення"
-    confirm_email: 
+    confirm_email:
       subject: "Підтвердження замовлення"
   order_not_in_system: "Замовлення з таким номером у нас не існує."
   order_number: "Замовлення"
   order_operation_authorize: "Авторизувати"
   order_processed_but_following_items_are_out_of_stock: "Ваше замовлення було оброблене, але нижчезазначені товари закінчилися на складі:"
   order_processed_successfully: "Ваше замовлення було успішно оброблене"
-  order_state: 
-    # keys correspond to Checkout state names: 
+  order_state:
+    # keys correspond to Checkout state names:
     address: "Адреса"
     adjustments: "Надбавки"
     awaiting_return: "Очікує повернення"
@@ -662,7 +662,7 @@ uk:
   payment_methods_setting_description: "Налаштування способів оплати, які може використовувати клієнт"
   payment_processing_failed: "Неможливо зробити платіж, будь ласка, перевірте введену інформацію"
   payment_state: "Статус платежу"
-  payment_states: 
+  payment_states:
     balance_due: частково
     checkout: оформляється
     completed: завершено
@@ -700,125 +700,125 @@ uk:
   product_groups: "Групи товарів"
   product_has_no_description: "У даного товару немає опису."
   product_properties: "Властивості товару"
-  product_rule: 
+  product_rule:
     choose_products: "Вибрані товари"
     label: "Замовлення повинно включати %{select} з цих товарів"
     match_all: "всі"
     match_any: "хоч би один"
-    product_source: 
+    product_source:
       group: "З групи товарів"
       manual: "Вибрати вручну"
-  product_scopes: 
-    groups: 
-      price: 
+  product_scopes:
+    groups:
+      price:
         description: "Фільтри для вибору товарів на основі ціни"
         name: "Ціна"
-      search: 
+      search:
         description: "Фільтри для вибору товарів на основі назви товару, його опису і ключових слів"
         name: "Тестовий пошук"
-      taxon: 
+      taxon:
         description: "Фільтри для вибору товарів на основі  приналежності до таксонів"
         name: "Таксони"
-      values: 
+      values:
         description: "Фільтри для вибору товарів на основі значень властивостей і товарних опцій товару"
         name: "Значення"
-    scopes: 
-      ascend_by_master_price: 
+    scopes:
+      ascend_by_master_price:
         name: "за основною ціною товару (за зростанням)"
-      ascend_by_name: 
+      ascend_by_name:
         name: "за назвою товару (по алфавіту)"
-      ascend_by_updated_at: 
+      ascend_by_updated_at:
         name: "за датою оновлення інформації про товар (прямий порядок)"
-      descend_by_master_price: 
+      descend_by_master_price:
         name: "за основною ціною товару (за спаданням)"
-      descend_by_name: 
+      descend_by_name:
         name: "за назвою товару (по алфавіту в зворотному порядку)"
-      descend_by_popularity: 
+      descend_by_popularity:
         name: "За популярністю (зворотний порядок)"
-      descend_by_updated_at: 
+      descend_by_updated_at:
         name: "за датою оновлення інформації про товар (зворотний порядок)"
-      in_name: 
-        args: 
+      in_name:
+        args:
           words: ""
         description: "(розділенння пробілом або комою)"
         name: "Назва товару містить наступні слова"
         sentence: "Назва товару містить '<em>%s</em>'"
-      in_name_or_description: 
-        args: 
+      in_name_or_description:
+        args:
           words: ""
         description: "(розділенння пробілом або комою)"
         name: "Назва товару або його опис містить наступні слова"
         sentence: "Назва товару або його опис містить '<em>%s</em>'"
-      in_name_or_keywords: 
-        args: 
+      in_name_or_keywords:
+        args:
           words: ""
         description: "(розділенння пробілом або комою)"
         name: "Назва товару або його ключові слова містять такі слова"
         sentence: "Назва товару або його ключові слова містять  '<em>%s</em>'"
-      in_taxons: 
-        args: 
+      in_taxons:
+        args:
           "taxon_names": "назва таксонів"
         description: "(розділенння пробілом або комою)"
         name: "Належить наступним таксонам або їх спадкоємцям,"
         sentence: "належить таксону <em>%s</em> або його спадкоємцю"
-      master_price_gte: 
-        args: 
+      master_price_gte:
+        args:
           amount: ""
         description: ""
         name: "Основна ціна більше або дорівнює"
         sentence: "ціна більше або дорівнює <em>%.2f</em>"
-      master_price_lte: 
-        args: 
+      master_price_lte:
+        args:
           amount: ""
         description: ""
         name: "Основна ціна менша або дорівнює"
         sentence: "ціна менша або дорівнює <em>%.2f</em>"
-      price_between: 
-        args: 
+      price_between:
+        args:
           high: "до"
           low: "от"
         description: ""
         name: "Основна ціна знаходится в діапазоні"
         sentence: "ціна в діапазоні від <em>%.2f</em> до <em>%.2f</em>"
-      taxons_name_eq: 
-        args: 
+      taxons_name_eq:
+        args:
           taxon_name: "назва таксона"
         description: "належить вказаному таксону - без спадкоємців"
         name: "Належить таксону (без спадкоємців)"
         sentence: "належить таксону <em>%s</em>"
-      with: 
-        args: 
+      with:
+        args:
           value: ""
         description: "(виберіть товари, які будуть входити в групу)"
         name: "Вибрані товари"
         sentence: "c ID <em>%s</em>"
-      with_ids: 
-        args: 
+      with_ids:
+        args:
           ids: ""
         description: "(виберіть товари, які будуть входити в групу)"
         name: "Вибрані товари"
         sentence: "c ID <em>%s</em>"
-      with_option: 
-        args: 
+      with_option:
+        args:
           option: ""
         description: "Вибирає всі товари, які мають зазначену опцію (наприклад, колір)"
         name: "Має наступну товарну опцію"
         sentence: "с опцией <em>%s</em>"
-      with_option_value: 
-        args: 
+      with_option_value:
+        args:
           option: "Товарна опція"
           value: "Значення"
         description: "Вибирає всі товари, у яких є хоча б один варіант, для якого зазначена опція має зазначене значення (наприклад, колір: червоний)"
         name: "Має опцію з вказаним значенням"
         sentence: "є опція <em>%s</em> зі значенням<em>%s</em>"
-      with_property: 
-        args: 
+      with_property:
+        args:
           property: ""
         description: "Вибирає всі товари, які мають зазначену властивість (наприклад, вага)"
         name: "Має наступну властивість"
         sentence: "з властивістю<em>%s</em>"
-      with_property_value: 
-        args: 
+      with_property_value:
+        args:
           property: "Властивість товару"
           value: "Значення"
         description: "Вибирає всі товари, у яких є хоча б один варіант, для якого вказана властивість має зазначене значення (наприклад, вага: 10)"
@@ -827,22 +827,22 @@ uk:
   products: "Товари"
   products_with_zero_inventory_display: "Відсутні товари % {not} будуть відображатися"
   promotion: "Промо-акція"
-  promotion_form: 
-    match_policies: 
+  promotion_form:
+    match_policies:
       all: "Відповідає всім цим правилам"
       any: "Відповідає хоча б одному правилу"
   promotion_rule: "Правило"
-  promotion_rule_types: 
-    first_order: 
+  promotion_rule_types:
+    first_order:
       description: "Повинен бути першим замовленням покупця"
       name: "Перше замовлення"
-    item_total: 
+    item_total:
       description: "Сума замовлення відповідає наступним критеріям"
       name: "Сума замовлення"
-    product: 
+    product:
       description: "Замовлення включає вказані товари"
       name: "Товари"
-    user: 
+    user:
       description: "Доступно тільки для зазначених користувачів"
       name: "Користувачі"
   promotions: "Промо-акції"
@@ -874,7 +874,7 @@ uk:
   resend_confirmation_instructions: "Відправити повторно інструкції з підтвердження"
   resend_unlock_instructions: "Відправити повторно інструкції щодо розблокування"
   reset_password: "Скинути мій пароль"
-  resource_controller: 
+  resource_controller:
     member_object_not_found: "Запитуваний запис не знайдено."
     successfully_created: "Запис успішно створений!"
     successfully_removed: "Запис успішно видалений!"
@@ -920,12 +920,12 @@ uk:
   ship_address: "Адреса доставки"
   shipment: "Відправка"
   shipment_details: "Деталі відправки"
-  shipment_mailer: 
-    shipped_email: 
+  shipment_mailer:
+    shipped_email:
       subject: "Повідомлення про доставку"
   shipment_number: "Відправка №"
   shipment_state: "Статус відправки"
-  shipment_states: 
+  shipment_states:
     backorder: затримується
     partial: частково
     pending: очікує
@@ -972,7 +972,7 @@ uk:
   sold: "Продано"
   sort_ordering: "Порядок сортування"
   special_instructions: "Додаткові інструкції"
-  spree: 
+  spree:
     date: "Дата"
     time: "Час"
   spree_gateway_error_flash_for_checkout: "Виникли проблеми з Вашими реквізитами. Будь ласка, перевірте їх і спробуйте ще раз."
@@ -1055,11 +1055,11 @@ uk:
   user_account: "Обліковий запис користувача"
   user_created_successfully: "Обліковий запис успішно створений"
   user_details: "Додатково"
-  user_rule: 
+  user_rule:
     choose_users: "Вибрати користувачів"
   users: "Користувачі"
   validate_on_profile_create: "Перевіряти при створенні профілю"
-  validation: 
+  validation:
     cannot_be_less_than_shipped_units: "не може бути менше, ніж кількість відвантажених одиниць"
     is_too_large: "занадто багато - кількість на складі менше запитаної кількості!"
     must_be_int: "має бути цілим числом"
@@ -1090,6 +1090,6 @@ uk:
     pagination:
       next: наступна →
       previous: ← попередня
-      first: перша 
-      last: остання 
+      first: перша
+      last: остання
       truncate: "..."

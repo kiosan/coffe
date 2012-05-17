@@ -7,11 +7,15 @@ module SpreeHelper
       text = "#{text}"
     else
       text = "#{text}" # : (#{current_order.item_count}) #{order_price(current_order)}"
-      
+
     end
     link_to raw(text), cart_path, :class => "top-link-cart"
   end
-  
+
+  def product_description
+
+  end
+
   def breadcrumbs(taxon, separator="&nbsp;&raquo;&nbsp;")
     return "" if current_page?("/") || taxon.nil?
     separator = raw(separator)
@@ -26,11 +30,11 @@ module SpreeHelper
     crumb_list = content_tag(:ul, raw(crumbs.flatten.map{|li| li.mb_chars}.join), :class=>"breadcrumbs")
     content_tag(:div, crumb_list, :id => 'breadcrumbs')
   end
-    
+
   # returns the price of the product to show for display purposes
   def product_price(product_or_variant, options={})
     amount = product_or_variant.price
-    options.reverse_merge! :format_as_currency => true  
+    options.reverse_merge! :format_as_currency => true
     if product_or_variant.kind_of? Variant
       currency = product_or_variant.product.currency
     else
@@ -44,9 +48,9 @@ module SpreeHelper
   def variant_price_diff(v)
 
     number_to_currency variant.price
-    
+
   end
-  
+
   def format_price(price, options={})
     formatted_price = number_to_currency price, :locale => options[:currency] == "EUR" ? :fr : I18n.locale
     formatted_price
@@ -54,7 +58,7 @@ module SpreeHelper
 
   # human readable list of variant options
     def variant_options(v, allow_back_orders = Spree::Config[:allow_backorders], include_style = true)
-      
+
       list = v.options_text
 
       # We shouldn't show out of stock if the product is infact in stock
