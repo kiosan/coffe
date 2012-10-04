@@ -1,9 +1,9 @@
-<%= render :partial => 'admin/shared/configuration_menu' %>
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
 
 <div class="toolbar" data-hook="toolbar">
   <ul class="actions">
     <li>
-      <%= button_link_to t(:new_payment_method), new_object_url, :icon => 'add', :id => 'admin_new_payment_methods_link'  %>
+      <%= button_link_to t(:new_payment_method), new_object_url, :icon => 'add', :id => 'admin_new_payment_methods_link' %>
     </li>
   </ul>
   <br class="clear" />
@@ -22,7 +22,7 @@
   </tr>
   <tbody>
     <% @payment_methods.each do |method|%>
-      <tr id="<%= dom_id method %>" data-hook="admin_payment_methods_index_rows">
+      <tr id="<%= spree_dom_id method %>" data-hook="admin_payment_methods_index_rows">
         <td width="120px"><%= method.name %></td>
         <td width="140px"><%= method.type %></td>
         <td width="100px"><%= method.environment.to_s.titleize %></td>

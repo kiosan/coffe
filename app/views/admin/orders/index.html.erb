@@ -2,7 +2,7 @@
   <%= button_link_to t(:new_order), new_admin_order_url, :icon => 'add', :id => 'admin_new_order' %>
 </div>
 
-<%= render :partial => 'admin/shared/order_sub_menu' %>
+<%= render :partial => 'spree/admin/shared/order_sub_menu' %>
 
 <h1><%= t(:listing_orders) %></h1>
 
@@ -10,16 +10,16 @@
   <thead>
     <tr data-hook="admin_orders_index_headers">
       <% if @show_only_completed %>
-        <th><%= sort_link @search, :completed_at, t('activerecord.attributes.order.completed_at') %></th>
+        <th><%= sort_link @search, :completed_at, t(:completed_at, :scope => 'activerecord.attributes.spree/order') %></th>
       <% else %>
-        <th><%= sort_link @search, :created_at,   t(:order_date) %></th>
+        <th><%= sort_link @search, :created_at,   t(:created_at, :scope => 'activerecord.attributes.spree/order') %></th>
       <% end %>
-      <th><%= sort_link @search, :number,         t(:order_number) %></th>
-      <th><%= sort_link @search, :state,          t(:status) %></th>
-      <th><%= sort_link @search, :payment_state,  t(:payment_state) %></th>
-      <th><%= sort_link @search, :shipment_state, t(:shipment_state) %></th>
-      <th><%= sort_link @search, :email,          t(:customer) %></th>
-      <th><%= sort_link @search, :total,          t(:total) %></th>
+      <th><%= sort_link @search, :number,         t(:number, :scope => 'activerecord.attributes.spree/order') %></th>
+      <th><%= sort_link @search, :state,          t(:state, :scope => 'activerecord.attributes.spree/order') %></th>
+      <th><%= sort_link @search, :payment_state,  t(:payment_state, :scope => 'activerecord.attributes.spree/order') %></th>
+      <th><%= sort_link @search, :shipment_state, t(:shipment_state, :scope => 'activerecord.attributes.spree/order') %></th>
+      <th><%= sort_link @search, :email,          t(:email, :scope => 'activerecord.attributes.spree/order') %></th>
+      <th><%= sort_link @search, :total,          t(:total, :scope => 'activerecord.attributes.spree/order') %></th>
       <th data-hook="admin_orders_index_header_actions"></th>
     </tr>
   </thead>
@@ -46,40 +46,40 @@
 <% content_for :sidebar do %>
   <div class="box" data-hook="admin_orders_index_search">
     <h3><%= t(:search) %></h3>
-    <%= form_for [:admin, @search] do |f| %>
+    <%= search_form_for [:admin, @search] do |f| %>
       <%= label_tag nil, t(:date_range) %><br />
       <div class="date-range-filter">
         <div class="left sub-field">
-          <%= f.text_field :created_at_greater_than, :class => 'datepicker' %><br />
+          <%= f.text_field :created_at_gt, :class => 'datepicker' %><br />
           <%= label_tag nil, t(:start), :class => 'sub' %>
         </div>
         <div class="right sub-field">
-          <%= f.text_field :created_at_less_than, :class => 'datepicker' %><br />
+          <%= f.text_field :created_at_lt, :class => 'datepicker' %><br />
           <%= label_tag nil, t(:stop), :class => 'sub' %>
         </div>
       </div>
 
       <p><%= label_tag nil, t(:status) %><br />
-      <%= f.select :state_equals, Order.state_machines[:state].states.collect {|s| [t("order_state.#{s.name}"), s.value]}, {:include_blank => true} %></p>
+      <%= f.select :state_eq, Spree::Order.state_machines[:state].states.collect {|s| [t("order_state.#{s.name}"), s.value]}, {:include_blank => true} %></p>
 
       <p>
         <%= label_tag nil, t(:order_number) %><br />
-        <%= f.text_field :number_like, :size => 25 %>
+        <%= f.text_field :number_cont, :size => 25 %>
       </p>
       <p>
         <%= label_tag nil, t(:email) %><br />
-        <%= f.text_field :email_like, :size => 25 %>
+        <%= f.text_field :email_cont, :size => 25 %>
       </p>
       <p>
-        <%= label_tag nil, t(:first_name_begins_with) %><br />
-        <%= f.text_field :bill_address_firstname_starts_with, :size => 25 %>
+        <%= label_tag nil, t(:first_name_start) %><br />
+        <%= f.text_field :bill_address_firstname_start, :size => 25 %>
       </p>
       <p>
-        <%= label_tag nil, t(:last_name_begins_with) %><br />
-        <%= f.text_field :bill_address_lastname_starts_with, :size => 25 %>
+        <%= label_tag nil, t(:last_name_start) %><br />
+        <%= f.text_field :bill_address_lastname_start, :size => 25 %>
       </p>
       <p>
-        <%= f.check_box :completed_at_is_not_null, {:checked => @show_only_completed}, '1', '' %>
+        <%= f.check_box :completed_at_not_null, {:checked => @show_only_completed}, '1', '' %>
         <%= label_tag nil, t(:show_only_complete_orders) %>
       </p>
       <div data-hook="admin_orders_index_search_buttons">

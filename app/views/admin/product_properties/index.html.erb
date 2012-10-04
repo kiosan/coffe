@@ -1,10 +1,10 @@
-<%= render :partial => 'admin/shared/product_sub_menu' %>
+<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
 
-<%= render :partial => 'admin/shared/product_tabs', :locals => {:current => 'Product Properties'} %>
+<%= render :partial => 'spree/admin/shared/product_tabs', :locals => { :current => 'Product Properties' } %>
 
-<%= render 'shared/error_messages', :target => @product %>
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @product } %>
 
-<%= form_for @product, :url => admin_product_url(@product), :html => { :method => :put } do |f| %>
+<%= form_for @product, :url => admin_product_url(@product), :method => :put do |f| %>
   <table class="index">
     <thead>
       <tr data-hook="product_properties_header">
@@ -15,7 +15,7 @@
     </thead>
     <tbody id="product_properties" data-hook>
       <%= f.fields_for :product_properties do |pp_form| %>
-        <%= render 'product_property_fields', :f => pp_form %>
+        <%= render :partial => 'product_property_fields', :locals => { :f => pp_form } %>
       <% end %>
     </tbody>
   </table>
@@ -38,7 +38,7 @@
   <div id="prototypes" data-hook></div>
     <%= image_tag 'spinner.gif', :plugin => 'spree', :style => 'display:none;', :id => 'busy_indicator' %>
     <br />
-  <%= render :partial => 'admin/shared/edit_resource_links' %>
+  <%= render :partial => 'spree/admin/shared/edit_resource_links' %>
 <% end %>
 
 <%= javascript_tag do -%>
@@ -47,7 +47,7 @@
   $("#product_properties input.autocomplete").live("keydown", function(){
     already_auto_completed = $(this).is('ac_input');
     if (!already_auto_completed) {
-      $(this).autocomplete(properties);
+      $(this).autocomplete({source: properties});
       $(this).focus();
     }
   });

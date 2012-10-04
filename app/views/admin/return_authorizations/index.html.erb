@@ -9,7 +9,7 @@
   </div>
 <% end %>
 
-<%= render :partial => 'admin/shared/order_tabs', :locals => {:current => 'Return Authorizations'} %>
+<%= render :partial => 'spree/admin/shared/order_tabs', :locals => { :current => 'Return Authorizations' } %>
 
 <table class="index">
   <tr data-hook="rma_header">
@@ -20,7 +20,7 @@
     <th></th>
   </tr>
   <% @return_authorizations.each do |return_authorization| %>
-    <tr id="<%= dom_id(return_authorization) %>" data-hook="rma_row">
+    <tr id="<%= spree_dom_id(return_authorization) %>" data-hook="rma_row">
       <td><%= return_authorization.number %></td>
       <td><%= t(return_authorization.state.downcase) %></td>
       <td><%= number_to_currency return_authorization.amount %></td>

@@ -5,11 +5,12 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.3.10' 
+gem 'mysql2', '0.3.10'
 
-gem 'spree', :git=>"git://github.com/spree/spree.git", :branch => 'master'
-
-gem 'spree_static_content', :git =>"git://github.com/kiosan/spree_static_content.git"
+gem 'spree', '~> 1.1.0'# :git=>"git://github.com/spree/spree.git", :branch => 'master'
+gem "devise-encryptable"
+#gem 'spree_static_content', :git =>"git://github.com/kiosan/spree_static_content.git"
+gem 'spree_static_content', :git => 'git://github.com/spree/spree_static_content.git', :branch => '1-1-stable'
 gem "formtastic"
 # gem "spree_editor", :git => "git://github.com/romul/spree_editor.git"
 gem 'spree_editor', :git => 'git://raw.github.com/spree/spree_editor.git'
@@ -17,7 +18,7 @@ gem 'tinymce-rails', '>= 3.4.7.0.1'
 #gem 'spree_related_products', :git => 'git://raw.github.com/spree/spree_related_products.git'
 #gem 'paperclip' , path: 'vendor/gems/paperclip'
 #gem "spree-ru-ua-l10n", :git => 'git://github.com/rovetz/spree-ru-ua-l10n.git', :branch => 'master'
-gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+#gem 'spree_i18n', "1.0.0"#, :git => 'git://github.com/spree/spree_i18n.git'
 gem "thin"
 gem 'eventmachine', '1.0.0.beta3'
 # Gems used only for assets and not required

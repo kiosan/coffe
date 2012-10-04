@@ -1,8 +1,8 @@
 <% if @line_item.try(:errors).present? %>
-  <%= render 'shared/error_messages', :target => @line_item %>
+  <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @line_item } %>
 <% end %>
 
-<%= form_for @order, :url => admin_order_url(@order), :html => { :method => :put} do |f| %>
+<%= form_for @order, :url => admin_order_url(@order), :method => :put do |f| %>
   <%= f.hidden_field :number %>
   <table class="index">
     <tbody id="line-items">
@@ -14,7 +14,7 @@
         <th class="orders-actions" data-hook="admin_order_form_line_items_header_actions"></th>
       </tr>
       <%= f.fields_for :line_items do |li_form| %>
-        <%= render :partial => 'admin/orders/line_item', :locals => { :f => li_form } %>
+        <%= render :partial => 'spree/admin/orders/line_item', :locals => { :f => li_form } %>
       <% end %>
     </tbody>
     <tbody id="subtotal" data-hook="admin_order_form_subtotal">
@@ -43,14 +43,12 @@
   </table>
 
   <p class="form-buttons" data-hook="admin_order_form_buttons">
-    <%= button @order.complete? ? t(:update) : t(:continue) %>
-    <%= t(:or) %> <%= link_to t('actions.cancel'), admin_orders_url %>
+    <%= button t(:update) %>
+    <%= t(:or) %> <%= link_to t(:back), admin_orders_url %>
   </p>
 
 <% end %>
 
 <%= javascript_tag do -%>
-  <%= render 'admin/shared/update_order_state.js' %>
+  <%= render :partial => 'spree/admin/shared/update_order_state', :handlers => [:js] %>
 <% end -%>
-
-<%= javascript_include_tag 'admin/orders/edit_form' %>

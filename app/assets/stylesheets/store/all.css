@@ -11,34 +11,3 @@
  *= require_self
  *= require_tree .
 */
-
-a {
-color: #7b5435 !important;
-}
-
-
-a:hover {
-color: #482911 !important;
-}
-
-span.price{
-  color: #7b5435 !important;
-}
-
-input[type='submit']{
-  background-color: #7b5435 !important;
-}
-button{
-  background-color: #7b5435 !important;
-}
-a.button{
-  color: #fff!important;
-  background-color: #7b5435 !important;
-  border: 1px solid #482911 !important;
-}
-::selection{
-  color: #482911 !important;
-}
-#cart-detail td, .order-total{
-  color: #482911 !important;
-}

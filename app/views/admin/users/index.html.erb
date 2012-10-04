@@ -18,7 +18,7 @@
   </thead>
   <tbody>
     <% @users.each do |user|%>
-      <tr id="<%= dom_id user %>" data-hook="admin_users_index_rows">
+      <tr id="<%= spree_dom_id user %>" data-hook="admin_users_index_rows">
         <td width="350px" class='user_email'><%=link_to user.email, object_url(user) %></td>
         <td data-hook="admin_users_index_row_actions">
           <%= link_to_edit user, :class => 'edit' %> &nbsp;
@@ -35,11 +35,10 @@
 <% content_for :sidebar do %>
   <div class="box" data-hook="admin_users_index_search">
     <h3><%= t(:search) %></h3>
-    <% @search = User.search %>
-    <%= form_for [:admin, @search] do |f| %>
+    <%= search_form_for [:admin, @search] do |f| %>
       <p>
         <%= t(:email) %><br />
-        <%= f.text_field :email_contains, :size =>18 %>
+        <%= f.text_field :email_cont, :size =>18 %>
       </p>
       <div data-hook="admin_users_index_search_buttons">
         <p><%= button t(:search) %></p>

@@ -1,5 +1,5 @@
 <div data-hook="admin_user_new_form_header">
-  <%= render 'shared/error_messages', :target => @user %>
+  <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @user } %>
   <h1><%= t(:new_user) %></h1>
 </div>
 
@@ -8,7 +8,7 @@
     <%= render :partial => 'form', :locals => { :f => f } %>
 
     <div data-hook="admin_user_new_form_buttons">
-      <%= render :partial => 'admin/shared/new_resource_links' %>
+      <%= render :partial => 'spree/admin/shared/new_resource_links' %>
     </div>
   <% end %>
 </div>
